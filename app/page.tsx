@@ -7,8 +7,17 @@ export const metadata = {
 };
 
 export default async function Home() {
-  const res = await fetch("https://fakestoreapi.com/products?limit=4");
-  const products: Product[] = await res.json();
+  let products: Product[] = [];
+  try{
+    const res = await fetch("https://fakestoreapi.com/products?limit=4", { cache: "no-store" });
+    if (!res.ok) {
+      throw new Error("Failed to fetch products");
+    }
+    products = await res.json();
+
+  } catch (error) {
+    console.error("Error fetching products:", error);
+  }
 
   return (
     <main className="min-h-screen bg-white-900">
