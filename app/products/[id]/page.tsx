@@ -9,7 +9,7 @@ export const metadata = {
 export default async function ProductDetails({params}: {params: Promise<{id: string}>}) {
   const { id } = await params;
 
-    const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+    const res = await fetch(`https://fakestoreapi.com/products/${id}`, { cache: "no-store" });
     const product = await res.json();
 
     return (
