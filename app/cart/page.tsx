@@ -44,7 +44,7 @@ export default function CartPage(){
                                 
                                 {/* Image */}
                                 <img
-                                    src={item.image}
+                                    src={item.thumbnail}
                                     alt={item.title}
                                     className="h-24 w-24 object-contain mx-auto sm:mx-0 flex-shrink-0"
                                 />
