@@ -11,7 +11,7 @@ export const metadata = {
 export default async function Home() {
   let products: Product[] = [];
   try{
-    const res = await fetch("https://fakestoreapi.com/products?limit=4", { cache: "no-store" });
+    const res = await fetch("https://dummyjson.com/products?limit=4", { cache: "no-store" });
     if (!res.ok) {
       throw new Error("Failed to fetch products");
     }
@@ -77,7 +77,7 @@ export default async function Home() {
               className="bg-gray-800 border border-gray-700 rounded-lg p-4 hover:border-green-600 transition-colors flex flex-col"
             >
               <img
-                src={product.image}
+                src={product.thumbnail}
                 alt={product.title}
                 className="h-40 object-contain mx-auto mb-4"
               />
