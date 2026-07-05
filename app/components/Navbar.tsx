@@ -7,7 +7,7 @@ export default function Navbar(){
     <nav className="flex w-full justify-between h-15 items-center px-5 bg-gray-900 border-b border-gray-800 sticky top-0 z-50">
       <div className="text-white text-2xl font-bold">
         <Link href="/">
-          <Image src="/lizzy.png" alt="NextCart Logo" width={60} height={40} className="pl-2" />
+          <Image src="/Lizzy.png" alt="NextCart Logo" width={60} height={40} className="pl-2" />
         </Link>
       </div>
       <div className="flex gap-5 text-white text-lg font-medium items-center mr-5">

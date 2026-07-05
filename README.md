@@ -4,7 +4,7 @@ A fully functional e-commerce application built with Next.js 15, TypeScript, and
 
 ## 🚀 Live Demo
 
-🔗 **[nextcart.vercel.app](https://nextcart.vercel.app)**
+🔗 **[nextcart.vercel.app](https://e-commerce-app-three-coral.vercel.app/)**
 
 ---
 
