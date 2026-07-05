@@ -2,6 +2,8 @@ import { count } from "console";
 import ProductCard from "../components/ProductCard";
 import { Product } from "../types";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: "Products | NextCart",
   description: "Browse our full product catalog",

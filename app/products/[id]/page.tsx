@@ -1,6 +1,8 @@
 import AddToCartButton from "@/app/components/AddToCartButton";
 import Link from "next/link";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: "Product Details | NextCart",
   description: "View detailed product information",

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Product } from "./types";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: "Lizzy Bright Store | Shop the Best Products",
   description: "Browse our curated collection of products at the best prices",
