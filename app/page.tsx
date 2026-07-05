@@ -15,12 +15,13 @@ export default async function Home() {
     if (!res.ok) {
       throw new Error("Failed to fetch products");
     }
-    products = await res.json();
+    const data = await res.json();
 
+    products = data.products;
   } catch (error) {
     console.error("Error fetching products:", error);
   }
-
+  console.log(products); // Log the products to the console for debugging
   return (
     <main className="min-h-screen bg-white-900">
 

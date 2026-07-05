@@ -25,7 +25,7 @@ export default async function ProductDetails({params}: {params: Promise<{id: str
                 <p>Rating: {product.rating} out of 5 stars</p>
                 <p>Category: {product.category}</p>
                 <AddToCartButton product={product} />
-                <Link href="/products" className="text-blue-500 mt-4 inline-block">Back to Products</Link>
+                <Link href="/products" className="text-blue-500 mt-4 inline-block pl-5">Back to Products</Link>
             </div>
         </main>
     )

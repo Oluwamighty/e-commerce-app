@@ -47,8 +47,8 @@ export const metadata = {
 export default async function Products() {
 
         const res = await fetch("https://dummyjson.com/products", { cache: "no-store" });
-        const products = await res.json();   
-
+        const data = await res.json();   
+        const products = data.products;
         // console.log(products); // Log the products to the console for debugging
   return (
     <main className="min-h-screen bg-gray-900 p-8">
