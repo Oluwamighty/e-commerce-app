@@ -17,7 +17,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="bg-gray-800 border border-gray-700 rounded-lg p-4 flex flex-col">
       <Link href={`/products/${product.id}`}>
-        <img src={product.image} alt={product.title} className="h-40 object-contain mx-auto mb-4" />
+        <img src={product.thumbnail} alt={product.title} className="h-40 object-contain mx-auto mb-4" />
         <h3 className="text-white text-sm font-medium line-clamp-2 mb-2">{product.title}</h3>
       </Link>
       <p className="text-green-400 font-bold mb-4">${product.price}</p>

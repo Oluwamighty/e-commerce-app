@@ -257,7 +257,7 @@ export default function CheckoutPage() {
                         <div className="space-y-3 mb-4">
                             {cart.map(item => (
                                 <div key={item.id} className="flex gap-3 items-center">
-                                    <img src={item.image} alt={item.title} className="w-10 h-10 object-contain flex-shrink-0" />
+                                    <img src={item.thumbnail} alt={item.title} className="w-10 h-10 object-contain flex-shrink-0" />
                                     <div className="flex-1 min-w-0">
                                         <p className="text-gray-300 text-xs line-clamp-1">{item.title}</p>
                                         <p className="text-gray-400 text-xs">Qty: {item.quantity}</p>

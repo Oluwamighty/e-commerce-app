@@ -7,8 +7,8 @@ const mockProduct: Product = {
   price: 109.95,
   category: "men's clothing",
   description: 'A test product',
-  image: 'https://test.com/image.jpg',
-  rating: { rate: 4.5, count: 120 }
+  thumbnail: 'https://test.com/image.jpg',
+  rating: 4.5
 };
 
 describe('cartReducer', () => {
